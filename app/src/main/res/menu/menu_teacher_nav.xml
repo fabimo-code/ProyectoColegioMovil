@@ -3,17 +3,17 @@
     <item
         android:id="@+id/nav_home"
         android:title="@string/inicio"
-        android:icon="@drawable/ic_home_24"/>
+        android:icon="@drawable/ic_home"/>
     <item
         android:id="@+id/nav_subjects"
         android:title="@string/asignaturas"
-        android:icon="@drawable/ic_class_24"/>
+        android:icon="@drawable/ic_tasks"/>
     <item
         android:id="@+id/nav_calendar"
         android:title="@string/calendario"
-        android:icon="@drawable/ic_calendar_today_24"/>
+        android:icon="@drawable/ic_calendar"/>
     <item
         android:id="@+id/nav_comms"
-        android:title="@string/comunicados"
-        android:icon="@drawable/ic_chat_bubble_outline_24"/>
+        android:title="@string/mensajes"
+        android:icon="@drawable/ic_messages"/>
 </menu>

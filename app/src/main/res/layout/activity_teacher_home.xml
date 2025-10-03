@@ -75,7 +75,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:contentDescription="@string/todo"
-                        app:srcCompat="@drawable/ic_campaign_24"
+                        app:srcCompat="@drawable/ic_writemail"
                         app:tint="@color/amber500" />
 
                     <LinearLayout
@@ -247,7 +247,7 @@
                             android:layout_height="32dp"
                             android:contentDescription="@string/todo"
                             android:background="?attr/selectableItemBackgroundBorderless"
-                            app:srcCompat="@drawable/ic_chevron_left_24"
+                            app:srcCompat="@drawable/ic_chevron_left"
                             app:tint="@color/textSecondary" />
 
                         <TextView
@@ -267,7 +267,7 @@
                             android:layout_height="32dp"
                             android:contentDescription="@string/todo"
                             android:background="?attr/selectableItemBackgroundBorderless"
-                            app:srcCompat="@drawable/ic_chevron_right_24"
+                            app:srcCompat="@drawable/ic_chevron_right"
                             app:tint="@color/textSecondary" />
                     </LinearLayout>
 
@@ -426,7 +426,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/todo"
-                            app:srcCompat="@drawable/ic_checklist_24"
+                            app:srcCompat="@drawable/ic_asistencia"
                             app:tint="@color/primaryTeal" />
                         <TextView
                             android:layout_width="wrap_content"
@@ -450,7 +450,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/todo"
-                            app:srcCompat="@drawable/ic_upload_file_24"
+                            app:srcCompat="@drawable/ic_upload"
                             app:tint="@color/primaryTeal" />
                         <TextView
                             android:layout_width="wrap_content"
@@ -474,7 +474,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/todo"
-                            app:srcCompat="@drawable/ic_campaign_24"
+                            app:srcCompat="@drawable/ic_writemail"
                             app:tint="@color/primaryTeal" />
 
                         <TextView
