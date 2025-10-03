@@ -152,5 +152,14 @@
     <string name="correo_electr_nico">Correo electrónico</string>
     <string name="verificacion">Te enviaremos un código de verificación a tu correo electrónico para continuar con el proceso.</string>
     <string name="ingresa_tu_correo">Ingresa tu correo</string>
+    <string name="perfil">Perfil</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="informaci_personal">Información Personal</string>
+    <string name="correo_electr_nico_institucional">Correo Electrónico Institucional</string>
+    <string name="rol_asignado">Rol Asignado</string>
+    <string name="informaci_n_de_contacto">Información de Contacto</string>
+    <string name="n_mero_de_tel_fono">Número de Teléfono</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="cerrar_sesi_n">Cerrar sesión</string>
 
 </resources>
