@@ -1,4 +1,4 @@
-package com.example.proyectocolegiomovil // <-- cámbialo a TU package real
+package com.example.proyectocolegiomovil
 
 import android.os.Bundle
 import android.util.Patterns
