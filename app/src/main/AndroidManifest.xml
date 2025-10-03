@@ -13,14 +13,24 @@
         android:theme="@style/Theme.ProyectoColegioMovil">
         
         <activity
-            android:name=".TeacherHomeActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+
         <activity
             android:name=".SelectorActivity"
             android:exported="false"
@@ -53,6 +63,11 @@
 
         <activity
             android:name=".MainActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".TeacherHomeActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
             

@@ -147,5 +147,10 @@
     <string name="notificaciones">Notificaciones</string>
     <string name="grupo_11a">grupo11</string>
     <string name="todo">TODO</string>
+    <string name="enviar_c_digo">Enviar código</string>
+    <string name="tucorreo_ejemplo_com">tucorreo@ejemplo.com</string>
+    <string name="correo_electr_nico">Correo electrónico</string>
+    <string name="verificacion">Te enviaremos un código de verificación a tu correo electrónico para continuar con el proceso.</string>
+    <string name="ingresa_tu_correo">Ingresa tu correo</string>
 
 </resources>
