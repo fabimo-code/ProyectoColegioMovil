@@ -98,4 +98,54 @@
     <string name="detalle_prof_ramirez">Autor: Prof. Ramírez | Nivel: 2 | Acuerdos: 1</string>
     <string name="detalle_prof_martinez">Autor: Prof. Martínez | Nivel: 0 | Acuerdos: 0</string>
     <string name="detalle_prof_lopez">Autor: Prof. López | Nivel: 0 | Acuerdos: 0</string>
+    <string name="bienvenido">Bienvenido, Profesor</string>
+
+    <!-- Bottom nav -->
+    <string name="inicio">Inicio</string>
+    <string name="asignaturas">Asignaturas</string>
+    <string name="calendario">Calendario</string>
+    <string name="comunicados">Comunicados</string>
+
+    <!-- Recordatorio -->
+    <string name="recordatorio_clases">Recordatorio: Clases</string>
+    <string name="proxima_clase_30_09_1230">Próxima clase para el 30/09 a las 12:30.</string>
+
+    <!-- Subjects -->
+    <string name="calc_dif_title">Cálculo Diferencial</string>
+    <string name="fisica_mecanica">Física Mecánica</string>
+    <string name="programacion">Programación</string>
+    <string name="grupo_10a">Grupo 10A</string>
+    <string name="grupo_10b">Grupo 10B</string>
+    <string name="aula_302">Aula 302</string>
+    <string name="aula_101">Aula 101</string>
+    <string name="lab_comp">Lab. Comp.</string>
+    <string name="lv_10_12">Lun - Vie 10:00-12:00</string>
+    <string name="mj_14_16">Mar - Jue 14:00-16:00</string>
+    <string name="mi_08_11">Mie 08:00-11:00</string>
+    <string name="ver">Ver</string>
+
+    <!-- Calendar -->
+    <string name="sep_2025">Septiembre 2025</string>
+
+    <!-- Upcoming events -->
+    <string name="proximos_eventos">Próximos eventos</string>
+    <string name="entrega_notas_finales">Entrega de notas finales</string>
+    <string name="reunion_directivos">Reunión de directivos</string>
+    <string name="fecha_25_09_2025">25/09/2025</string>
+    <string name="fecha_28_09_2025">28/09/2025</string>
+    <string name="academico">Académico</string>
+    <string name="administrativo">Administrativo</string>
+
+    <!-- Quick actions -->
+    <string name="acciones_rapidas">Acciones rápidas</string>
+    <string name="tomar_asistencia">Tomar\nasistencia</string>
+    <string name="subir_material">Subir material</string>
+    <string name="crear_comunicado">Crear\ncomunicado</string>
+
+    <!-- Top bar menu -->
+    <string name="buscar">Buscar</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="grupo_11a">grupo11</string>
+    <string name="todo">TODO</string>
+
 </resources>

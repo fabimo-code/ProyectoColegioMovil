@@ -22,8 +22,60 @@
     <!-- Colores de estado -->
     <color name="color_check_positivo">#BBF7D0</color>
     <color name="color_cancelar_negativo">#F95656</color>
-    
+
     <!-- Colores básicos -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- App brand mapped to neon -->
+    <color name="colorPrimary">#00E5FF</color>          <!-- Neon Cyan -->
+    <color name="colorPrimaryDark">#00363D</color>      <!-- Deep Teal (status/nav) -->
+    <color name="colorAccent">#FF00E5</color>           <!-- Neon Magenta -->
+
+    <!-- App surfaces -->
+    <color name="backgroundColor">#0B0F14</color>       <!-- Near-black blue -->
+    <color name="surfaceColor">#111827</color>          <!-- Card/tiles -->
+    <color name="surfaceVariant">#0F1624</color>        <!-- Inputs/secondary cards -->
+    <color name="outlineColor">#233046</color>          <!-- Borders -->
+    <color name="textColor">#E6F0FF</color>             <!-- Primary text on dark -->
+    <color name="textDim">#A5B4CF</color>               <!-- Secondary text -->
+
+    <!-- Neons for accents -->
+    <color name="neonCyan">#00E5FF</color>
+    <color name="neonMagenta">#FF00E5</color>
+    <color name="neonPurple">#9B5CF6</color>
+    <color name="neonLime">#A3FF12</color>
+    <color name="neonPink">#FF4D9D</color>
+    <color name="neonBlue">#4CC9FF</color>
+
+    <!-- Legacy names used in layouts kept for compatibility -->
+    <color name="green">#00FF95</color>
+    <color name="azul">#00E5FF</color>
+
+    <!-- iPhone-style colors kept to avoid build errors (not used) -->
+    <color name="iphoneOrange">#FF9500</color>
+    <color name="iphoneLightGray">#D4D4D2</color>
+    <color name="iphoneDarkGray">#505050</color>
+    <color name="iphoneBlack">#1C1C1C</color>
+    <color name="iphoneTextWhite">#FFFFFF</color>
+    <color name="iphoneTextBlack">#000000</color>
+
+    <!-- Ripple (with alpha) -->
+    <color name="rippleNeonCyan">#8000E5FF</color>
+    <color name="rippleNeonMagenta">#80FF00E5</color>
+    <color name="primaryTeal">#68B1C4</color>
+    <color name="amber500">#FBBF24</color>
+
+    <color name="textPrimary">#1F2937</color>
+    <color name="textSecondary">#6B7280</color>
+    <color name="textMuted">#9CA3AF</color>
+
+    <!-- Reminder text color (brown-ish like Figma) -->
+    <color name="reminderTitle">#92400E</color>
+
+    <!-- Chips -->
+    <color name="chipBg">#DCFCE7</color>
+    <color name="chipBlueText">#1E40AF</color>
+    <color name="chipGreenText">#088736</color>
 </resources>
+

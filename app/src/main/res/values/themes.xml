@@ -60,4 +60,83 @@
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/color_letra_notificacion</item>
     </style>
+    <style name="Teacher.SubjectCard">
+    <item name="android:layout_width">160dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="cardCornerRadius">16dp</item>
+    <item name="cardElevation">2dp</item>
+</style>
+
+    <style name="Teacher.SubjectCardContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Teacher.SubjectTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+
+    <style name="Teacher.SubjectMeta">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/textSecondary</item>
+    </style>
+
+    <style name="Teacher.SubjectTime">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textMuted</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="Teacher.SubjectButton" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/primaryTeal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Teacher.QuickCard">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
+
+    <style name="Teacher.QuickCardContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Teacher" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colors you already defined -->
+        <item name="colorPrimary">@color/primaryTeal</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Optional: nav bar / status bar -->
+        <item name="android:statusBarColor">@color/primaryTeal</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+
+        <!-- Material components defaults are fine; customize as needed -->
+    </style>
+    <style name="Teacher.Heading1" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/textPrimary</item>
+    </style>
+    <style name="Teacher.Heading2" parent="TextAppearance.Material3.TitleMedium"/>
+    <style name="Teacher.Body" parent="TextAppearance.Material3.BodyMedium"/>
+
 </resources>

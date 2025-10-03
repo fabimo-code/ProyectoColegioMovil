@@ -24,10 +24,10 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_arrow_back"
-            android:tint="@color/color_iconos_2"
             android:layout_marginEnd="16dp"
             android:clickable="true"
-            android:focusable="true" />
+            android:focusable="true"
+            app:tint="@color/color_iconos_2" />
 
         <TextView
             android:id="@+id/subject_title"
@@ -113,7 +113,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_2" />
+                        app:tint="@color/color_iconos_2" />
 
                 </LinearLayout>
 
@@ -170,7 +170,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_2" />
+                        app:tint="@color/color_iconos_2" />
 
                 </LinearLayout>
 

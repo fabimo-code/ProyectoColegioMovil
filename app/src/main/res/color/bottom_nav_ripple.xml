@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed / focused states -->
+    <item android:state_pressed="true" android:color="@color/primaryTeal" android:alpha="0.16"/>
+    <item android:state_focused="true" android:color="@color/primaryTeal" android:alpha="0.16"/>
+    <!-- Default ripple tint -->
+    <item android:color="@color/primaryTeal" android:alpha="0.10"/>
+</selector>

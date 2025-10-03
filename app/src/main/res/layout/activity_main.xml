@@ -25,8 +25,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"
-            android:tint="@color/color_iconos_2"
-            android:layout_marginEnd="16dp" />
+            android:layout_marginEnd="16dp"
+            app:tint="@color/color_iconos_2" />
 
         <TextView
             android:id="@+id/title"
@@ -42,7 +42,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_settings"
-            android:tint="@color/color_iconos_2" />
+            app:tint="@color/color_iconos_2" />
 
     </LinearLayout>
 
@@ -111,7 +111,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_1" />
+                        app:tint="@color/color_iconos_1" />
 
                 </LinearLayout>
 
@@ -160,7 +160,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_1" />
+                        app:tint="@color/color_iconos_1" />
 
                 </LinearLayout>
 
@@ -209,7 +209,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_1" />
+                        app:tint="@color/color_iconos_1" />
 
                 </LinearLayout>
 
@@ -258,7 +258,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_1" />
+                        app:tint="@color/color_iconos_1" />
 
                 </LinearLayout>
 
@@ -307,7 +307,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/ic_arrow_right"
-                        android:tint="@color/color_iconos_1" />
+                        app:tint="@color/color_iconos_1" />
 
                 </LinearLayout>
 

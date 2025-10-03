@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/teacher_home_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <!-- Top bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/top_bar"
+        style="@style/Widget.Material3.Toolbar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:title="@string/bienvenido"
+        app:titleCentered="true"
+        app:navigationIconTint="@color/textSecondary"
+        app:titleTextColor="@color/textPrimary"
+        app:menu="@menu/menu_teacher_top"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:contentInsetStartWithNavigation="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:liftOnScroll="true"
+        app:subtitleTextColor="@color/textSecondary"
+        app:subtitle=""
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Content -->
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+            <!-- Recordatorio card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/ic_reminder"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:contentDescription="@string/todo"
+                        app:srcCompat="@drawable/ic_campaign_24"
+                        app:tint="@color/amber500" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="12dp"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:id="@+id/txt_reminder_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/recordatorio_clases"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/reminderTitle"/>
+
+                        <TextView
+                            android:id="@+id/txt_reminder_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/proxima_clase_30_09_1230"
+                            android:textSize="14sp"
+                            android:textColor="@color/reminderTitle"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Asignaturas -->
+            <TextView
+                android:id="@+id/label_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/asignaturas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Subject card 1 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_calc"
+                        style="@style/Teacher.SubjectCard"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout style="@style/Teacher.SubjectCardContent">
+                            <TextView
+                                android:id="@+id/txt_calc_title"
+                                style="@style/Teacher.SubjectTitle"
+                                android:text="@string/calc_dif_title"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/grupo_10a"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/aula_302"/>
+                            <TextView
+                                style="@style/Teacher.SubjectTime"
+                                android:text="@string/lv_10_12"/>
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_calc_ver"
+                                style="@style/Teacher.SubjectButton"
+                                android:text="@string/ver"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Subject card 2 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_fisica"
+                        style="@style/Teacher.SubjectCard"
+                        android:layout_marginEnd="16dp">
+
+                        <LinearLayout style="@style/Teacher.SubjectCardContent">
+                            <TextView
+                                style="@style/Teacher.SubjectTitle"
+                                android:text="@string/fisica_mecanica"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/grupo_10b"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/aula_101"/>
+                            <TextView
+                                style="@style/Teacher.SubjectTime"
+                                android:text="@string/mj_14_16"/>
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_fisica_ver"
+                                style="@style/Teacher.SubjectButton"
+                                android:text="@string/ver"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Subject card 3 -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_prog"
+                        style="@style/Teacher.SubjectCard">
+
+                        <LinearLayout style="@style/Teacher.SubjectCardContent">
+                            <TextView
+                                style="@style/Teacher.SubjectTitle"
+                                android:text="@string/programacion"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/grupo_11a"/>
+                            <TextView
+                                style="@style/Teacher.SubjectMeta"
+                                android:text="@string/lab_comp"/>
+                            <TextView
+                                style="@style/Teacher.SubjectTime"
+                                android:text="@string/mi_08_11"/>
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_prog_ver"
+                                style="@style/Teacher.SubjectButton"
+                                android:text="@string/ver"/>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Calendario -->
+            <TextView
+                android:id="@+id/label_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/calendario"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <!-- Simple built-in CalendarView; you can replace with a custom grid later -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="8dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_month_prev"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:contentDescription="@string/todo"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            app:srcCompat="@drawable/ic_chevron_left_24"
+                            app:tint="@color/textSecondary" />
+
+                        <TextView
+                            android:id="@+id/txt_month"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/sep_2025"
+                            android:textColor="@color/textPrimary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_month_next"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:contentDescription="@string/todo"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            app:srcCompat="@drawable/ic_chevron_right_24"
+                            app:tint="@color/textSecondary" />
+                    </LinearLayout>
+
+                    <CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Próximos eventos -->
+            <TextView
+                android:id="@+id/label_upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/proximos_eventos"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/textPrimary"/>
+
+            <!-- Evento 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/entrega_notas_finales"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fecha_25_09_2025"
+                            android:textSize="14sp"
+                            android:textColor="@color/textSecondary"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/chip_event_type1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/academico"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/chipBlueText"
+                        android:background="@drawable/bg_pill_green"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Evento 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/reunion_directivos"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/textPrimary"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fecha_28_09_2025"
+                            android:textSize="14sp"
+                            android:textColor="@color/textSecondary"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/chip_event_type2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        android:text="@string/administrativo"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/chipGreenText"
+                        android:background="@drawable/bg_pill_green"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Acciones rápidas -->
+            <TextView
+                android:id="@+id/label_quick_actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/acciones_rapidas"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/textPrimary"/>
+
+            <LinearLayout
+                android:id="@+id/quick_actions_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Tomar asistencia -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_asistencia"
+                    style="@style/Teacher.QuickCard"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp">
+                    <LinearLayout style="@style/Teacher.QuickCardContent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_checklist_24"
+                            app:tint="@color/primaryTeal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/tomar_asistencia"
+                            android:textSize="12sp"
+                            android:textColor="@color/textPrimary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Subir material -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_material"
+                    style="@style/Teacher.QuickCard"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="8dp">
+                    <LinearLayout style="@style/Teacher.QuickCardContent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_upload_file_24"
+                            app:tint="@color/primaryTeal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/subir_material"
+                            android:textSize="12sp"
+                            android:textColor="@color/textPrimary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Crear comunicado -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_comunicado"
+                    style="@style/Teacher.QuickCard"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp">
+                    <LinearLayout style="@style/Teacher.QuickCardContent"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:contentDescription="@string/todo"
+                            app:srcCompat="@drawable/ic_campaign_24"
+                            app:tint="@color/primaryTeal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/crear_comunicado"
+                            android:textSize="12sp"
+                            android:textColor="@color/textPrimary"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:menu="@menu/menu_teacher_nav"
+        app:labelVisibilityMode="labeled"
+        app:itemRippleColor="@color/bottom_nav_ripple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
