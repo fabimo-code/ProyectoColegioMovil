@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_asignaturas"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_asignaturas" />
+    
+    <item
+        android:id="@+id/nav_mensajes"
+        android:icon="@drawable/ic_messages"
+        android:title="@string/nav_mensajes" />
+    
+    <item
+        android:id="@+id/nav_observador"
+        android:icon="@drawable/ic_observer"
+        android:title="@string/nav_observador" />
+    
+    <item
+        android:id="@+id/nav_tareas"
+        android:icon="@drawable/ic_tasks"
+        android:title="@string/nav_tareas" />
+</menu>

@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores principales del diseño -->
+    <color name="color_principal">#68B1C4</color>
+    <color name="color_titulos">#68A8C4</color>
+    <color name="color_fondo">#FFFFFF</color>
+    <color name="color_botones">#89C3D1</color>
+    
+    <!-- Colores de texto -->
+    <color name="color_letra">#142D33</color>
+    <color name="color_titulos_internos">#3C98C0</color>
+    <color name="color_texto_guia">#90A0B6</color>
+    <color name="color_letra_notificacion">#AB731F</color>
+    
+    <!-- Colores de iconos -->
+    <color name="color_iconos_1">#FACC15</color>
+    <color name="color_iconos_2">#142D33</color>
+    
+    <!-- Colores de fondo -->
+    <color name="color_fondo_notificacion">#FEFCE8</color>
+    
+    <!-- Colores de estado -->
+    <color name="color_check_positivo">#BBF7D0</color>
+    <color name="color_cancelar_negativo">#F95656</color>
+    
+    <!-- Colores básicos -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#FFFFFFFF</color>
-    <color name="orange">#FFFFFFFF</color>
 </resources>

@@ -1,3 +1,101 @@
 <resources>
     <string name="app_name">ProyectoColegioMovil</string>
+    
+    <!-- Navegación -->
+    <string name="nav_asignaturas">Asignaturas</string>
+    <string name="nav_mensajes">Mensajes</string>
+    <string name="nav_observador">Observador</string>
+    <string name="nav_tareas">Tareas</string>
+    
+    <!-- Pantalla Asignaturas -->
+    <string name="mis_asignaturas">Mis asignaturas</string>
+    <string name="matematicas">Matemáticas</string>
+    <string name="historia">Historia</string>
+    <string name="ciencias_naturales">Ciencias Naturales</string>
+    <string name="literatura">Literatura española</string>
+    <string name="economia">Economía</string>
+    <string name="profesor">Profesor:</string>
+    
+    <!-- Pantalla Selector -->
+    <string name="selecciona_actividad">Selecciona un actividad</string>
+    <string name="recursos">Recursos</string>
+    <string name="calificaciones">Calificaciones</string>
+    <string name="ver_recursos_asignatura">Ver recursos de la asignatura</string>
+    <string name="ver_calificaciones_asignatura">Ver calificaciones de la asignatura</string>
+    
+    <!-- Pantalla Calificaciones -->
+    <string name="periodo_actual">Periodo actual</string>
+    <string name="periodo_anterior">Periodo anterior</string>
+    <string name="promedio_periodo">Promedio del periodo</string>
+    <string name="ver_notas_detalladas">Ver notas detalladas</string>
+    <string name="ver_rubrica_evaluacion">Ver Rúbrica de Evaluación</string>
+    
+    <!-- Pantalla Recursos -->
+    <string name="guia_matematicas">Guía de matemáticas avanzadas</string>
+    <string name="calculo_diferencial">Cálculo diferencial</string>
+    <string name="teoremas_fundamentales">Teoremas fundamentales del cálculo</string>
+    <string name="geometria_analitica">Geometría analítica</string>
+    <string name="calculo_integral">Introducción a cálculo integral</string>
+    
+    <!-- Pantalla Mensajes -->
+    <string name="anuncios">Anuncios</string>
+    <string name="mensajes">Mensajes</string>
+    <string name="hoy">HOY</string>
+    <string name="ayer">AYER</string>
+    <string name="claro_envio">¡Claro! Enseguida lo envío</string>
+    <string name="no_olviden_ensayo">No olviden el ensayo para mañana</string>
+    <string name="resultados_laboratorio">Resultados de laboratorio disponibles</string>
+    <string name="recordatorio_practica">Recordatorio de práctica de campo</string>
+    
+    <!-- Pantalla Observador -->
+    <string name="anotaciones">Anotaciones</string>
+    <string name="no_participa_clase">No participa activamente en clase</string>
+    <string name="mejoria_tareas">Mejoría en la entrega de tareas</string>
+    <string name="excelente_examen">Excelente desempeño en el exámen</string>
+    <string name="autor">Autor:</string>
+    <string name="nivel">Nivel:</string>
+    <string name="acuerdos">Acuerdos:</string>
+    
+    <!-- Pantalla Tareas -->
+    <string name="resolver_taller_algebra">Resolver taller de álgebra</string>
+    <string name="examen_periodo">Examen del periodo</string>
+    <string name="investigacion_revolucion">Investigación Revolución Francesa</string>
+    <string name="maqueta_celula">Maqueta célula eucariota</string>
+    <string name="fecha_entrega">Fecha de entrega:</string>
+    <string name="fecha_realizacion">Fecha de realización:</string>
+    
+    <!-- Fechas -->
+    <string name="octubre_15">15 de Octubre</string>
+    <string name="octubre_18">18 de Octubre</string>
+    <string name="octubre_25">25 de Octubre</string>
+    <string name="noviembre_1">1 de Noviembre</string>
+    <string name="octubre_10">10 de Octubre</string>
+    
+    <!-- Profesores -->
+    <string name="dr_ramirez">Dr. Ramirez</string>
+    <string name="dra_lopez">Dra. Lopez</string>
+    <string name="sr_martinez">Sr. Martinez</string>
+    <string name="sra_rodriguez">Sra. Rodriguez</string>
+    <string name="dr_fernandez">Dr. Fernandez</string>
+    <string name="prof_ramirez">Prof. Ramírez</string>
+    <string name="prof_martinez">Prof. Martínez</string>
+    <string name="prof_lopez">Prof. López</string>
+    
+    <!-- Profesores completos -->
+    <string name="profesor_dr_ramirez">Profesor: Dr. Ramirez</string>
+    <string name="profesor_dra_lopez">Profesor: Dra. Lopez</string>
+    <string name="profesor_sr_martinez">Profesor: Sr. Martinez</string>
+    <string name="profesor_sra_rodriguez">Profesor: Sra. Rodriguez</string>
+    <string name="profesor_dr_fernandez">Profesor: Dr. Fernandez</string>
+    
+    <!-- Fechas completas -->
+    <string name="fecha_entrega_octubre_15">Fecha de entrega: 15 de Octubre</string>
+    <string name="fecha_realizacion_octubre_25">Fecha de realización: 25 de Octubre</string>
+    <string name="fecha_entrega_octubre_18">Fecha de entrega: 18 de Octubre</string>
+    <string name="fecha_entrega_noviembre_1">Fecha de entrega: 1 de Noviembre</string>
+    
+    <!-- Detalles de observador -->
+    <string name="detalle_prof_ramirez">Autor: Prof. Ramírez | Nivel: 2 | Acuerdos: 1</string>
+    <string name="detalle_prof_martinez">Autor: Prof. Martínez | Nivel: 0 | Acuerdos: 0</string>
+    <string name="detalle_prof_lopez">Autor: Prof. López | Nivel: 0 | Acuerdos: 0</string>
 </resources>

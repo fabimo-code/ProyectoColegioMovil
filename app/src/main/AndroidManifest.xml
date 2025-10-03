@@ -11,15 +11,46 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoColegioMovil">
+        
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+        <activity
+            android:name=".SelectorActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".GradesActivity"
+            android:exported="false"
+            android:parentActivityName=".SelectorActivity" />
+            
+        <activity
+            android:name=".ResourcesActivity"
+            android:exported="false"
+            android:parentActivityName=".SelectorActivity" />
+            
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".ObserverActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
+        <activity
+            android:name=".TasksActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+            
     </application>
 
 </manifest>

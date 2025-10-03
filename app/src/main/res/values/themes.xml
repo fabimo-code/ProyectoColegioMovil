@@ -2,8 +2,62 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ProyectoColegioMovil" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/color_principal</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/color_botones</item>
+        <item name="colorOnSecondary">@color/color_letra</item>
+        <item name="android:colorBackground">@color/color_fondo</item>
+        <item name="colorOnBackground">@color/color_letra</item>
+        <item name="colorSurface">@color/color_fondo</item>
+        <item name="colorOnSurface">@color/color_letra</item>
     </style>
 
     <style name="Theme.ProyectoColegioMovil" parent="Base.Theme.ProyectoColegioMovil" />
+    
+    <!-- Estilo base TextAppearance -->
+    <style name="TextAppearance" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_letra</item>
+    </style>
+    
+    <!-- Estilos de texto -->
+    <style name="TextAppearance.TitlePrimary">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/color_titulos</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextAppearance.TitleSecondary">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_letra</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextAppearance.TitleInternal">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_titulos_internos</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="TextAppearance.Body">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_letra</item>
+    </style>
+    
+    <style name="TextAppearance.Guide">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_texto_guia</item>
+    </style>
+    
+    <style name="TextAppearance.Notification">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_letra_notificacion</item>
+    </style>
 </resources>
